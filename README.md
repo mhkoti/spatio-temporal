@@ -7,14 +7,23 @@
 This repository includes a pre-processed dataset and all necessary code for replicating the analyses in 'Large-scale long-term passive-acoustic monitoring reveals spatio-temporal activity patterns of boreal bats' (DOI: 10.22541/au.166826490.04895229/v1) 
 
 In the data file 'data.csv' there are following columns:
+
 -period: ordinal referring to the 2 week subdivision of the study season 1.5.-15.10. 1 refers to the nights from 1.5. to 14.5. (starting date of a night) and so on.
+
 -year: the year (2015-2021)
+
 -taxa: taxon (Eptesicus nilssonii, Myotis sp., Pipistrellus nathusii)
+
 -place: station code and number referring to the recording place within each field station
+
 -station: name of the field station
+
 -fail: number of 10 min units without an observation
+
 -succ: number of 10 min units with an observation
+
 -lat: latitude of the field station
+
 -mic: number to specify whether an original (1) or new (2) mic was used in the specific device
 
 During pre-processing, raw bat observations have been cleaned to remove misidentifications, observations outside the study season (1.5.-15.10.), and non-focal taxa. The remaining observations have been allocated into 10-minute-long observation units grouped by period, year, taxon and place. The number of successful and failed (taxon recorded or not) units were then summarized and only the counts are presented in the data provided here.
